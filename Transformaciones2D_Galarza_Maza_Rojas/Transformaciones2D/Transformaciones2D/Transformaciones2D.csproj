@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<PropertyGroup><Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration><Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform><ProjectGuid>{D7996A44-092D-4A8D-AF38-77E2026DA610}</ProjectGuid><OutputType>WinExe</OutputType><RootNamespace>Transformaciones2D</RootNamespace><AssemblyName>Transformaciones2D</AssemblyName><TargetFrameworkVersion>v4.8</TargetFrameworkVersion><LangVersion>7.3</LangVersion><AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects></PropertyGroup>
+<PropertyGroup Condition=" '$(Configuration)' == 'Debug' "><OutputPath>bin\Debug\</OutputPath><DebugSymbols>true</DebugSymbols><DebugType>full</DebugType></PropertyGroup>
+<PropertyGroup Condition=" '$(Configuration)' == 'Release' "><OutputPath>bin\Release\</OutputPath><Optimize>true</Optimize></PropertyGroup>
+<ItemGroup><Reference Include="System"/><Reference Include="System.Core"/><Reference Include="System.Drawing"/><Reference Include="System.Windows.Forms"/></ItemGroup>
+<ItemGroup><Compile Include="Program.cs"/><Compile Include="Punto.cs"/><Compile Include="Matriz.cs"/><Compile Include="Figura.cs"/><Compile Include="Lienzo.cs"><SubType>Code</SubType></Compile><Compile Include="Form1.cs"><SubType>Form</SubType></Compile><Compile Include="Form1.Designer.cs"><DependentUpon>Form1.cs</DependentUpon></Compile></ItemGroup>
+<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+</Project>
